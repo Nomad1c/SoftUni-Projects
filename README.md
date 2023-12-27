@@ -1,5 +1,7 @@
 # 🚀 Welcome to My SoftUni Projects Repository! 🎓
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 Hey there! 👋 I'm Svetlin Dimitrov, and this is my collection of projects from the awesome Software University (SoftUni) courses. 🌟 Each project represents a coding adventure, a learning milestone, and a journey toward becoming a coding ninja. 🤓💻
 
 ## 📂 Project Organization
