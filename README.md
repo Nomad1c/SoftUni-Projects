@@ -1,6 +1,6 @@
 # 🚀 Welcome to My SoftUni Projects Repository! 🎓
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![C#](https://img.shields.io/badge/C%23-007396?style=flat&logo=c-sharp&logoColor=white)](https://docs.microsoft.com/en-us/dotnet/csharp/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![C#](https://img.shields.io/badge/C%23-007396?style=flat&logo=c-sharp&logoColor=white)](https://docs.microsoft.com/en-us/dotnet/csharp/) [![C++](https://img.shields.io/badge/-C%2B%2B-blue?style=flat&logo=c%2B%2B)](https://en.cppreference.com/)
 
 Hey there! 👋 I'm Svetlin Dimitrov, and this is my collection of projects from the awesome Software University (SoftUni) courses. 🌟 Each project represents a coding adventure, a learning milestone, and a journey toward becoming a coding ninja. 🤓💻
 
