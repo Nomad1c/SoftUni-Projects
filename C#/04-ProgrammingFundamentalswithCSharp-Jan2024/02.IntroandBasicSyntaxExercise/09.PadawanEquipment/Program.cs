@@ -8,27 +8,29 @@ namespace PadawanEquipment
         //The entry point for where our program begins
         { //Anything between these curly braces is the *Body* of the main method
             
-            double johnMoney = Convert.ToDouble(Console.ReadLine());
-            int studentNumint = Convert.ToInt32(Console.ReadLine());
-            double saberCost = Convert.ToDouble(Console.ReadLine());
-            double robeCost = Convert.ToDouble(Console.ReadLine());
-            double beltCost = Convert.ToDouble(Console.ReadLine());
+            //Input
+            double masterJohnsFund = Convert.ToDouble(Console.ReadLine());
+            double studentAmount = Convert.ToDouble(Console.ReadLine());
+            double costSaber = Convert.ToDouble(Console.ReadLine());
+            double costRobe = Convert.ToDouble(Console.ReadLine());
+            double costBelt = Convert.ToDouble(Console.ReadLine());
 
-            double placeholder = Convert.ToDouble(studentNumint);
+            //calc
+            double saberForAllStudents = Math.Ceiling(studentAmount * 1.1) * costSaber;
+            double robeForAllStudents = studentAmount * costRobe;
+            double beltforAllStudents = costBelt * (studentAmount - Math.Floor(studentAmount / 6));
 
-            placeholder = Math.Ceiling(placeholder * 1.1);
+            double totalCost = saberForAllStudents + robeForAllStudents + beltforAllStudents;
 
-            studentNumint = Convert.ToInt32(placeholder);
-            
-            double totalCost = studentNumint * (saberCost + robeCost + beltCost);
-
-            if (johnMoney >= totalCost)
+            //Output
+            if (masterJohnsFund >= totalCost)
             {
                 Console.WriteLine($"The money is enough - it would cost {totalCost:F2}lv.");
             }
+
             else
             {
-                double needed = johnMoney - totalCost;
+                double needed = totalCost - masterJohnsFund;
                 Console.WriteLine($"John will need {needed:F2}lv more.");
             }
         }
