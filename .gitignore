@@ -2341,3 +2341,5 @@ ehthumbs.db
 *~
 \#*\#
 .svn/
+
+*.GeneratedMSBuildEditorConfig.editorconfig
