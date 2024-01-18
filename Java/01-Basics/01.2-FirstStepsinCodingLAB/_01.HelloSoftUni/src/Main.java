@@ -1,4 +1,4 @@
-public class Main {
+class HelloSoftUni {
     public static void main(String[] args) {
         System.out.println("Hello SoftUni");
     }
