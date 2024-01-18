@@ -1,5 +1,7 @@
-function arch (name, projNum) {
-    let hours = projNum * 3
-    console.log(`The architect ${name} will need ${hours} hours to complete ${projNum} project/s.`)
+function arch (data) {
+    let hours = data[1] * 3
+    console.log(`The architect ${data[0]} will need ${hours} hours to complete ${data[1]} project/s.`)
 }
-arch("asdf", 5)
+arch(["George",
+"4"]
+)
