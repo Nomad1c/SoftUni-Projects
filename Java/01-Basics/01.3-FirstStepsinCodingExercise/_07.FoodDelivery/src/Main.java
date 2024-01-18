@@ -1,15 +1,25 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-public class Main {
-    public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+import java.util.Scanner;
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
-        }
+class FoodDelivery {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        int chickenMenus = Integer.parseInt(scanner.nextLine());
+        int fishMenus = Integer.parseInt(scanner.nextLine());
+        int vegetarianMenus = Integer.parseInt(scanner.nextLine());
+
+        double chickenMenuPrice = chickenMenus * 10.35;
+        double fishMenuPrice = fishMenus * 12.40;
+        double vegetarianMenuPrice = vegetarianMenus * 8.15;
+
+        double totalMenuPrice = chickenMenuPrice + fishMenuPrice + vegetarianMenuPrice;
+        double dessertPrice = 0.20 * totalMenuPrice;
+        double deliveryPrice = 2.50;
+
+        double totalOrderPrice = totalMenuPrice + dessertPrice + deliveryPrice;
+
+        System.out.println(totalOrderPrice);
+
+        scanner.close();
     }
 }
