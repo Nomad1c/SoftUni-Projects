@@ -1,4 +1,10 @@
-function filmBudget(budget, numberOfActors, clothingPricePerActor) {
+function filmBudget(data) {
+    
+    let budget = Number(data[0]);
+    let numberOfActors = Number(data[1]);
+    let clothingPricePerActor = Number(data[2]);
+
+    
     budget = parseFloat(budget);
     numberOfActors = parseInt(numberOfActors);
     clothingPricePerActor = parseFloat(clothingPricePerActor);
@@ -23,5 +29,11 @@ function filmBudget(budget, numberOfActors, clothingPricePerActor) {
     }
 }
 
-filmBudget("20000", "120", "55.5");
-filmBudget("15437.62", "186", "57.99");
+filmBudget((["20000",
+"120",
+"55.5"])
+);
+filmBudget((["15437.62",
+"186",
+"57.99"])
+);
