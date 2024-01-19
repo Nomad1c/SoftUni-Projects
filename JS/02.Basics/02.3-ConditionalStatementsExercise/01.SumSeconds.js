@@ -1,5 +1,10 @@
 function sumSeconds(data) {
-    let totalSeconds = data[0] + data[1] + data[2];
+    
+    let a = Number(data[0])
+    let b = Number(data[1])
+    let c = Number(data[2])
+
+    let totalSeconds = a + b + c;
     let minutes = Math.floor(totalSeconds / 60);
     let seconds = totalSeconds % 60;
 
@@ -9,7 +14,10 @@ function sumSeconds(data) {
     console.log(`${formattedMinutes}:${formattedSeconds}`);
 }
 
-sumSeconds([35, 45, 44]);
+sumSeconds((["35",
+"45",
+"44"])
+);
 sumSeconds([22, 7, 34]);
 sumSeconds([50, 50, 49]);
 sumSeconds([14, 12, 10]);
