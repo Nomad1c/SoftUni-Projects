@@ -1,2 +1,14 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using System;
+
+namespace CondenseArraytoNumber
+{
+    class Program
+    {
+        static void Main(string[] args)
+        //The entry point for where our program begins
+        { //Anything between these curly braces is the *Body* of the main method
+            
+
+        }
+    }
+}
