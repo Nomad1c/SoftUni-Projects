@@ -1,11 +1,11 @@
-function calculateOrderPrice(chickenMenus, fishMenus, vegetarianMenus) {
+function calculateOrderPrice(data) {
     const chickenMenuPrice = 10.35;
     const fishMenuPrice = 12.40;
     const vegetarianMenuPrice = 8.15;
 
-    const chickenMenusTotal = chickenMenus * chickenMenuPrice;
-    const fishMenusTotal = fishMenus * fishMenuPrice;
-    const vegetarianMenusTotal = vegetarianMenus * vegetarianMenuPrice;
+    const chickenMenusTotal = data[0] * chickenMenuPrice;
+    const fishMenusTotal = data[1] * fishMenuPrice;
+    const vegetarianMenusTotal = data[2] * vegetarianMenuPrice;
 
     const totalMenuPrice = chickenMenusTotal + fishMenusTotal + vegetarianMenusTotal;
 
@@ -14,10 +14,10 @@ function calculateOrderPrice(chickenMenus, fishMenus, vegetarianMenus) {
 
     const totalOrderPrice = totalMenuPrice + dessertPrice + deliveryCost;
 
-    const formattedTotalOrderPrice = totalOrderPrice.toFixed(2);
+    const formattedTotalOrderPrice = totalOrderPrice
 
     console.log(formattedTotalOrderPrice);
 }
 
-calculateOrderPrice(2, 4, 3);
-calculateOrderPrice(9, 2, 6);
+calculateOrderPrice([2, 4, 3]);
+calculateOrderPrice([9, 2, 6]);
