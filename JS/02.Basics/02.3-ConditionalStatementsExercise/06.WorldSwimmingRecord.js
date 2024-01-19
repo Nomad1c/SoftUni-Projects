@@ -1,4 +1,10 @@
-function swimmingRecord(record, distance, timePerMeter) {
+function swimmingRecord(data) {
+    
+    let record = Number(data[0]);
+    let distance = Number(data[1]);
+    let timePerMeter = Number(data[2]);
+
+    
     record = parseFloat(record);
     distance = parseFloat(distance);
     timePerMeter = parseFloat(timePerMeter);
@@ -14,5 +20,11 @@ function swimmingRecord(record, distance, timePerMeter) {
     }
 }
 
-swimmingRecord("10464", "1500", "20");
-swimmingRecord("55555.67", "3017", "5.03");
+swimmingRecord((["10464",
+"1500",
+"20"])
+);
+swimmingRecord((["55555.67",
+"3017",
+"5.03"])
+);
