@@ -1,5 +1,6 @@
-function calculateBonusPoints(points) {
+function calculateBonusPoints(data) {
     let bonus = 0;
+    let points = Number(data);
 
     if (points <= 100) {
         bonus += 5;
@@ -17,10 +18,11 @@ function calculateBonusPoints(points) {
         bonus += 2;
     }
 
-    return `${bonus}\n${points + bonus}`;
+    console.log(`${bonus}`);
+    console.log(`${points + bonus}`);
 }
 
-console.log(calculateBonusPoints(20));
-console.log(calculateBonusPoints(175));
-console.log(calculateBonusPoints(2703));
-console.log(calculateBonusPoints(15875));
+calculateBonusPoints((["20"]));
+calculateBonusPoints(175);
+calculateBonusPoints(2703);
+calculateBonusPoints(15875);
