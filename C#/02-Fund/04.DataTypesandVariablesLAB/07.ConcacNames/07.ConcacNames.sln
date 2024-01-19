@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34511.84
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07.ConcacNames", "07.ConcacNames.csproj", "{37641394-46CB-43B2-9968-53E7B9E67F1C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{37641394-46CB-43B2-9968-53E7B9E67F1C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37641394-46CB-43B2-9968-53E7B9E67F1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37641394-46CB-43B2-9968-53E7B9E67F1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37641394-46CB-43B2-9968-53E7B9E67F1C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AD4A3213-5584-4E04-B384-F467918A2DA0}
+	EndGlobalSection
+EndGlobal
