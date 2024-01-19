@@ -1,4 +1,11 @@
-function shoppingBudget(budget, videoCardsCount, processorsCount, ramCount) {
+function shoppingBudget(data) {
+    
+    let budget = Number(data[0]);
+    let videoCardsCount = Number(data[1]);
+    let processorsCount = Number(data[2]);
+    let ramCount = Number(data[3]);
+
+    
     let totalVCPrice = videoCardsCount * 250
     let totalPrPrice = processorsCount * (totalVCPrice * 0.35)
     let totalRAMPrice = ramCount * (totalVCPrice * 0.1)
@@ -21,5 +28,13 @@ function shoppingBudget(budget, videoCardsCount, processorsCount, ramCount) {
     }
 }
 
-shoppingBudget("900", "2", "1", "3"); // You have 198.75 leva left!
-shoppingBudget("920.45", "3", "1", "1"); // Not enough money! You need 3.92 leva more!
+shoppingBudget((["900",
+"2",
+"1",
+"3"])
+);
+shoppingBudget((["920.45",
+"3",
+"1",
+"1"])
+);
