@@ -1,4 +1,13 @@
-function toyShop(holidayPrice, puzzles, dolls, bears, minions, trucks) {
+function toyShop(data) {
+    
+    let holidayPrice = Number(data[0])
+    let puzzles = Number(data[1])
+    let dolls = Number(data[2])
+    let bears = Number(data[3])
+    let minions = Number(data[4])
+    let trucks = Number(data[5])
+
+    
     let pricePuzzle = 2.6
     let priceDoll = 3
     let priceBear = 4.1
@@ -38,5 +47,11 @@ function toyShop(holidayPrice, puzzles, dolls, bears, minions, trucks) {
     }
 }
 
-toyShop(40.8, 20, 25, 30, 50, 10)
-toyShop(320, 8, 2, 5, 5, 1)
+toyShop((["40.8",
+"20",
+"25",
+"30",
+"50",
+"10"])
+)
+toyShop([320, 8, 2, 5, 5, 1])
