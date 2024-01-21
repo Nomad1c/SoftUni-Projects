@@ -1,8 +1,8 @@
-function Vacation(data) {
+function Vacation(ppl1, type1, day1) {
 
-    let ppl = Number(data[0]);
-    let type = String(data[1]);
-    let day = String(data[2]);
+    let ppl = Number(ppl1);
+    let type = String(type1);
+    let day = String(day1);
     let total = 0;
 
     if (day == 'Friday'){
@@ -163,11 +163,11 @@ function Vacation(data) {
     console.log(`Total price: ${total}`);
 }
 
-Vacation([30,
+Vacation(30,
     "Students",
     "Sunday"
-    ]);
-Vacation([40,
+    );
+Vacation(40,
     "Regular",
     "Saturday"
-    ]);
+    );
