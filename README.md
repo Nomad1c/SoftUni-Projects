@@ -1,6 +1,7 @@
 # 🚀 Welcome to My SoftUni Projects Repository! 🎓
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![C#](https://img.shields.io/badge/C%23-007396?style=flat&logo=c-sharp&logoColor=white)](https://docs.microsoft.com/en-us/dotnet/csharp/) [![C++](https://img.shields.io/badge/-C%2B%2B-blue?style=flat&logo=c%2B%2B)](https://en.cppreference.com/) [![Java Version](https://img.shields.io/badge/Java-8%2B-blue.svg)](https://www.oracle.com/java/technologies/javase-downloads.html) [![JavaScript Version](https://img.shields.io/badge/JavaScript-ES6%2B-yellow.svg)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![C#](https://img.shields.io/badge/C%23-007396?style=flat&logo=c-sharp&logoColor=white)](https://docs.microsoft.com/en-us/dotnet/csharp/) [![C++](https://img.shields.io/badge/-C%2B%2B-blue?style=flat&logo=c%2B%2B)](https://en.cppreference.com/) [![Java Version](https://img.shields.io/badge/Java-8%2B-blue.svg)](https://www.oracle.com/java/technologies/javase-downloads.html) [![JavaScript Version](https://img.shields.io/badge/JavaScript-ES6%2B-yellow.svg)](https://developer.mozilla.org/en-US/docs/Web/JavaScript) [![Python Version](https://img.shields.io/badge/Python-3.6%2B-blue.svg)](https://www.python.org/downloads/)
+
 
 Hey there! 👋 I'm Svetlin Dimitrov, and this is my collection of projects from the awesome Software University (SoftUni) courses. 🌟 Each project represents a coding adventure, a learning milestone, and a journey toward becoming a coding ninja. 🤓💻
 
