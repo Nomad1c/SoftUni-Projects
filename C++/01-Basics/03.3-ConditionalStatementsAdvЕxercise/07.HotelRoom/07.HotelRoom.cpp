@@ -1,20 +1,64 @@
-﻿// 07.HotelRoom.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
+﻿#include <iostream>
+#include <iomanip>
 
-#include <iostream>
+using namespace std;
 
-int main()
-{
-    std::cout << "Hello World!\n";
+int main() {
+    string month;
+    int nights;
+    cin >> month >> nights;
+
+    double studioPrice, apartmentPrice;
+
+    if ((month == "May" || month == "October") && nights > 14) {
+        studioPrice = 50 * 0.70;
+    }
+    else if ((month == "May" || month == "October") && nights <= 14 && nights > 7) {
+        studioPrice = 50 * 0.95;
+    }
+    else if ((month == "May" || month == "October") && nights <= 7) {
+        studioPrice = 50;
+    }
+    else if ((month == "June" || month == "September") && nights > 14) {
+        studioPrice = 75.20 * 0.80;
+    }
+    else if ((month == "June" || month == "September") && nights <= 14) {
+        studioPrice = 75.20;
+    }
+    else if (month == "July" || month == "August") {
+        studioPrice = 76;
+    }
+    
+    
+
+    if (nights > 14) {
+        if (month == "May" || month == "October") {
+            apartmentPrice = 65 * 0.90;
+        }
+        else if (month == "June" || month == "September") {
+            apartmentPrice = 68.70 * 0.90;
+        }
+        else if (month == "July" || month == "August") {
+            apartmentPrice = 77 * 0.90;
+        }
+    }
+    else {
+        if (month == "May" || month == "October") {
+            apartmentPrice = 65;
+        }
+        else if (month == "June" || month == "September") {
+            apartmentPrice = 68.70;
+        }
+        else if (month == "July" || month == "August") {
+            apartmentPrice = 77;
+        }
+    }
+
+    double totalStudioPrice = studioPrice * nights;
+    double totalApartmentPrice = apartmentPrice * nights;
+
+    cout << "Apartment: " << fixed << setprecision(2) << totalApartmentPrice << " lv." << endl;
+    cout << "Studio: " << fixed << setprecision(2) << totalStudioPrice << " lv." << endl;
+
+    return 0;
 }
-
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
-
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
