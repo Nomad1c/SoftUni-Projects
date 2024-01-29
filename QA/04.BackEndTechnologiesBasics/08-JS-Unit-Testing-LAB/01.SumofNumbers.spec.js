@@ -1,5 +1,5 @@
 import { expect } from 'chai';
-import { sum } from './01.SumofNumbers.js'; 
+import { sum } from './01.SumofNumbers.js'
 
 describe('Sum Numbers', () => {
     it ('Should return 0 if empty array is given', () => {
