@@ -1,5 +1,5 @@
 import { expect } from 'chai'
-import { isSymmetric } from './02.CheckforSymmetry.js'
+import { isSymmetric } from './CheckforSymmetry.js'
 
 describe ('isSymmetric', () => {
     it ('Should return true if no input in the array, because nothing is symmetric', () => {
