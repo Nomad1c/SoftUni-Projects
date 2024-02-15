@@ -4,22 +4,26 @@
 using namespace std;
 
 int main() {
-    double totalAmount = 0;
-    double currentAmount;
+    double balance = 0.0;
+    double amount;
 
     while (true) {
-        cin >> currentAmount;
+        cin >> amount;
 
-        if (currentAmount < 0) {
+        if (amount < 0) {
             cout << "Invalid operation!" << endl;
             break;
         }
 
-        cout << fixed << setprecision(2) << "Increase: " << currentAmount << endl;
-        totalAmount += currentAmount;
+        if (amount == 0) {
+            break;
+        }
+
+        cout << "Increase: " << fixed << setprecision(2) << amount << endl;
+        balance += amount;
     }
 
-    cout << "Total: " << fixed << setprecision(2) << totalAmount << endl;
+    cout << "Total: " << fixed << setprecision(2) << balance << endl;
 
     return 0;
 }
