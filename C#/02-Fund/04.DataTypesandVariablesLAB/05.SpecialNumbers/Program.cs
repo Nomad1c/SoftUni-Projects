@@ -8,7 +8,7 @@ namespace SpecialNumbers
         //The entry point for where our program begins
         { //Anything between these curly braces is the *Body* of the main method
 
-            int n = int.Parse(Console.ReadLine());
+            int n = Convert.ToInt32(Console.ReadLine());
 
             for (int i = 1; i <= n; i++)
             {
